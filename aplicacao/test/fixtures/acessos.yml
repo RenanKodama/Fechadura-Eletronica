@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  horarioentrada: 2017-09-29 19:54:52
+  horariosaida: 2017-09-29 19:54:52
+
+two:
+  horarioentrada: 2017-09-29 19:54:52
+  horariosaida: 2017-09-29 19:54:52

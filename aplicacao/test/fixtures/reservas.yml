@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  horarioinicio: 2017-09-29 19:55:47
+  horariofim: 2017-09-29 19:55:47
+  motivo: MyString
+
+two:
+  horarioinicio: 2017-09-29 19:55:47
+  horariofim: 2017-09-29 19:55:47
+  motivo: MyString

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  i_d: MyString
+  nome: MyString
+  ra: MyString
+  password: MyString
+  descricao: MyString
+
+two:
+  i_d: MyString
+  nome: MyString
+  ra: MyString
+  password: MyString
+  descricao: MyString

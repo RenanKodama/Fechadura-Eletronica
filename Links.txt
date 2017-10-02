@@ -1,0 +1,2 @@
+https://launchschool.com/blog/integrating-rails-and-bootstrap-part-1
+https://www.w3schools.com/bootstrap/bootstrap_forms.asp

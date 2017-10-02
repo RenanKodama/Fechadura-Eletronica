@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Idreserva:</strong>
+  <%= @reserva.idreserva %>
+</p>
+
+<p>
+  <strong>Horarioentrada:</strong>
+  <%= @reserva.horarioentrada %>
+</p>
+
+<p>
+  <strong>Horariosaida:</strong>
+  <%= @reserva.horariosaida %>
+</p>
+
+<p>
+  <strong>Motivo:</strong>
+  <%= @reserva.motivo %>
+</p>
+
+<%= link_to 'Edit', edit_reserva_path(@reserva) %> |
+<%= link_to 'Back', reservas_path %>

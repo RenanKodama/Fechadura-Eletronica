@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Controle de Acesso a Salas</title>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/welcome/index">Engenharia de Software</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><%= link_to "Cadastras Alunos", alunos_path %></li>
+        <li><%= link_to "Cadastras Salas", salas_path %></li>
+        <li><%= link_to "Cadastras Professores(*Não implementado)", salas_path %></li>
+        <li><%= link_to "Reservar Sala", reservas_path %></li>    
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, class: "alert alert-#{ name == :error ? "danger" : "success" } alert-dismissable", role: "alert" do %>
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <%= msg %>
+      <% end %>
+    <% end %>
+    <%= yield %>
+  </div>
+
+  <!--<div class="container">
+    <h3>Basic Navbar Example</h3>
+      <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+  </div>-->
+
+</body>
+</html>

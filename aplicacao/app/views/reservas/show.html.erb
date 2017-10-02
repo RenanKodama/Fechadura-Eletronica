@@ -1,0 +1,19 @@
+<p id="notice"><%= bootstrap_flash %></p>
+
+<p>
+  <strong>Horarioinicio:</strong>
+  <%= @reserva.horarioinicio %>
+</p>
+
+<p>
+  <strong>Horariofim:</strong>
+  <%= @reserva.horariofim %>
+</p>
+
+<p>
+  <strong>Motivo:</strong>
+  <%= @reserva.motivo %>
+</p>
+
+<%= link_to 'Edit', edit_reserva_path(@reserva) %> |
+<%= link_to 'Back', reservas_path %>

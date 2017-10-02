@@ -1,0 +1,19 @@
+<p id="notice"><%= bootstrap_flash %></p>
+
+<p>
+  <strong>Ra:</strong>
+  <%= @usuario.ra %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @usuario.nome %>
+</p>
+
+<p>
+  <strong>Tipousuario:</strong>
+  <%= @usuario.tipousuario %>
+</p>
+
+<%= link_to 'Edit', edit_usuario_path(@usuario) %> |
+<%= link_to 'Back', usuarios_path %>

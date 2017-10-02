@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idreserva: 1
+  horarioentrada: 2017-09-25 19:00:04
+  horariosaida: 2017-09-25 19:00:04
+  motivo: MyString
+
+two:
+  idreserva: 1
+  horarioentrada: 2017-09-25 19:00:04
+  horariosaida: 2017-09-25 19:00:04
+  motivo: MyString
