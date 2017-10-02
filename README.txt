@@ -10,6 +10,8 @@ Materiais:
 
 
 Falta:
-	Verificar esquema relacional (adicionar relação entre alunos e reservas);
-	Deifinir campos como obrigatorios em todas as tabelas para cadastro;
-	Em acessor criar campo de quem o fez (ex:nome do aluno);
+	Deifinir campos como obrigatorios em todas as tabelas para cadastro;            --
+	Em acessos criar campo de quem o fez (ex:nome do user<admin>);
+    Em acessos criar campo de quando foi realizado a reserva (datetime);
+    Tela de LogIn e inicio de sessão;                                               --
+    Recuperação de senha;               
