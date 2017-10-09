@@ -14,4 +14,11 @@ Falta:
 	Em acessos criar campo de quem o fez (ex:nome do user<admin>);
     	Em acessos criar campo de quando foi realizado a reserva (datetime);
     	Tela de LogIn e inicio de sessão;                                               --
-    	Recuperação de senha;               
+    	Recuperação de senha;
+	Colocar RFID na tabela usuarios;
+	CombomBox(Aluno e Sala) na tabela Reservas;
+	Retirar Motivo da tabela Reservas;
+	Traduzir o Rails para pt-br;
+	Arrumar nome das variáveis;
+	*Colocar variavel tipo Collection na tabela Reserva;
+	Mudar o nome de Reserva para *(Agendo, Schedule);  
