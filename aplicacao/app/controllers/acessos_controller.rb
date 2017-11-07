@@ -28,7 +28,7 @@ class AcessosController < ApplicationController
 
     respond_to do |format|
       if @acesso.save
-        format.html { redirect_to @acesso, notice: 'Acesso was successfully created.' }
+        format.html { redirect_to @acesso, notice: 'Acesso Criado com Sucesso.' }
         format.json { render :show, status: :created, location: @acesso }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class AcessosController < ApplicationController
   def update
     respond_to do |format|
       if @acesso.update(acesso_params)
-        format.html { redirect_to @acesso, notice: 'Acesso was successfully updated.' }
+        format.html { redirect_to @acesso, notice: 'Acesso foi Atualizado com sucesso.' }
         format.json { render :show, status: :ok, location: @acesso }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class AcessosController < ApplicationController
   def destroy
     @acesso.destroy
     respond_to do |format|
-      format.html { redirect_to acessos_url, notice: 'Acesso was successfully destroyed.' }
+      format.html { redirect_to acessos_url, notice: 'Acesso foi Destruido com sucesso.' }
       format.json { head :no_content }
     end
   end

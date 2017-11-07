@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171002044747) do
+ActiveRecord::Schema.define(version: 20171107014629) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 20171002044747) do
   create_table "reservas", force: :cascade do |t|
     t.datetime "horarioinicio"
     t.datetime "horariofim"
-    t.string   "motivo"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
@@ -61,6 +60,7 @@ ActiveRecord::Schema.define(version: 20171002044747) do
     t.string   "tipousuario"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "rfide"
   end
 
 end

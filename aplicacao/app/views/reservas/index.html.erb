@@ -1,13 +1,13 @@
 <p id="notice"><%= bootstrap_flash %></p>
+<div class="page-header">
+<h1>Agenda</h1>
+</div>
 
-<h1>Reservas</h1>
-
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Horarioinicio</th>
-      <th>Horariofim</th>
-      <th>Motivo</th>
+      <th>Inicio da Reserva</th>
+      <th>Fim da Reserva</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,10 +17,9 @@
       <tr>
         <td><%= reserva.horarioinicio %></td>
         <td><%= reserva.horariofim %></td>
-        <td><%= reserva.motivo %></td>
-        <td><%= link_to 'Show', reserva %></td>
-        <td><%= link_to 'Edit', edit_reserva_path(reserva) %></td>
-        <td><%= link_to 'Destroy', reserva, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', reserva %></td>
+        <td><%= link_to 'Editar', edit_reserva_path(reserva) %></td>
+        <td><%= link_to 'Destruir', reserva, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +27,4 @@
 
 <br>
 
-<%= link_to 'New Reserva', new_reserva_path %>
+<%= link_to 'Criar Reserva', new_reserva_path %>

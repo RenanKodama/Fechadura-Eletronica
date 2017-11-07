@@ -1,7 +1,7 @@
 <p id="notice"><%= bootstrap_flash %></p>
 
 <p>
-  <strong>Ra:</strong>
+  <strong>Registro Acadêmico:</strong>
   <%= @usuario.ra %>
 </p>
 
@@ -11,9 +11,9 @@
 </p>
 
 <p>
-  <strong>Tipousuario:</strong>
+  <strong>Tipo Usuário:</strong>
   <%= @usuario.tipousuario %>
 </p>
 
-<%= link_to 'Edit', edit_usuario_path(@usuario) %> |
-<%= link_to 'Back', usuarios_path %>
+<%= link_to 'Editar', edit_usuario_path(@usuario) %> |
+<%= link_to 'Voltar', usuarios_path %>

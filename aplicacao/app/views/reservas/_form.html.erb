@@ -12,19 +12,15 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :horarioinicio %>
+    <%= f.label :'Início da reserva' %>
     <%= f.datetime_select :horarioinicio %>
   </div>
 
   <div class="field">
-    <%= f.label :horariofim %>
+    <%= f.label :'Fim da reserva' %>
     <%= f.datetime_select :horariofim %>
   </div>
 
-  <div class="field">
-    <%= f.label :motivo %>
-    <%= f.text_field :motivo %>
-  </div>
 
   <div class="actions">
     <%= f.submit %>

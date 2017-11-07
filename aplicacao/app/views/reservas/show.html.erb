@@ -1,19 +1,14 @@
 <p id="notice"><%= bootstrap_flash %></p>
 
 <p>
-  <strong>Horarioinicio:</strong>
+  <strong>Início da Reserva:</strong>
   <%= @reserva.horarioinicio %>
 </p>
 
 <p>
-  <strong>Horariofim:</strong>
+  <strong>Fim da Reserva:</strong>
   <%= @reserva.horariofim %>
 </p>
 
-<p>
-  <strong>Motivo:</strong>
-  <%= @reserva.motivo %>
-</p>
-
-<%= link_to 'Edit', edit_reserva_path(@reserva) %> |
-<%= link_to 'Back', reservas_path %>
+<%= link_to 'Editar', edit_reserva_path(@reserva) %> |
+<%= link_to 'Voltar', reservas_path %>
